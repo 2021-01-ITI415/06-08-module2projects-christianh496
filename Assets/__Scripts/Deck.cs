@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -27,7 +27,6 @@ public class Deck : MonoBehaviour {
 	[Header("Set Dynamically")]
 
 	public PT_XMLReader					xmlr;
-	// add from p 569
 	public List<string>					cardNames;
 	public List<Card>					cards;
 	public List<Decorator>				decorators;
@@ -38,7 +37,7 @@ public class Deck : MonoBehaviour {
 
 	// called by Prospector when it is ready
 	public void InitDeck(string deckXMLText) {
-		// from page 576
+		
 		if( GameObject.Find("_Deck") == null) {
 			GameObject anchorGO = new GameObject("_Deck");
 			deckAnchor = anchorGO.transform;
@@ -54,7 +53,7 @@ public class Deck : MonoBehaviour {
 		
 		
 		
-		// -------- end from page 576
+		
 		ReadDeck (deckXMLText);
 		MakeCards();
 	}
@@ -139,7 +138,6 @@ public class Deck : MonoBehaviour {
 	
 	
 	public void MakeCards() {
-		// stub Add the code from page 577 here
 		cardNames = new List<string>();
 		string[] letters = new string[] {"C","D","H","S"};
 		foreach (string s in letters) {
