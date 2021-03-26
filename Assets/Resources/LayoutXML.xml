@@ -12,9 +12,10 @@
 	<!-- hiddenby is the ids of cards that keep a card face-down -->
 	
 	<!-- Layer0, the deepest cards. -->
-	<slot id="0" x="-6" y="-5" faceup="0" layer="0" hiddenby="3,4" />
-	<slot id="1" x="0"  y="-5" faceup="0" layer="0" hiddenby="5,6" />
+	<slot id="0" x="-6" y="-100" faceup="0" layer="0" hiddenby="3,4" />
+	<slot id="1" x="0"  y="-5" faceup="0" layer="0" hiddenby="5,6" /> 
 	<slot id="2" x="6"  y="-5" faceup="0" layer="0" hiddenby="7,8" />
+
 	
 	<!-- Layer1, the next level. -->
 	<slot id="3" x="-7" y="-4" faceup="0" layer="1" hiddenby="9,10" />
@@ -23,6 +24,7 @@
 	<slot id="6" x="1"  y="-4" faceup="0" layer="1" hiddenby="13,14" />
 	<slot id="7" x="5"  y="-4" faceup="0" layer="1" hiddenby="15,16" />
 	<slot id="8" x="7"  y="-4" faceup="0" layer="1" hiddenby="16,17" />
+	
 	
 	
 	<!-- Layer2, the next level. -->
